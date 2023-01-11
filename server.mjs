@@ -1,9 +1,9 @@
-import path from 'path';
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
+import path from 'path'
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
 import express from 'express'
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const app = express()
 
@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.send('index.html')
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 })
 
 app.get('/api', (req, res) => {
