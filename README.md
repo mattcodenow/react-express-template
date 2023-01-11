@@ -1,4 +1,5 @@
 # React Express Template
+An alternative to running a react client and express server on two different ports - serve the react client from express.
 
 ## Clone
 ```
