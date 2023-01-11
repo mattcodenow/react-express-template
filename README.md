@@ -12,6 +12,11 @@ cd react-express-template
 npm i
 ```
 
+## Build
+```
+npm run client:build
+```
+
 ## Start Server + Client
 ```
 npm start
