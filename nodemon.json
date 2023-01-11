@@ -1,0 +1,7 @@
+{
+  "events": {
+    "restart": "npm run client:build"
+  },
+  "watch": ["server.mjs", "src/"],
+  "ext": "js, jsx, css, html"
+}
